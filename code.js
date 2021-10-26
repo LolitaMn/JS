@@ -55,8 +55,101 @@
 //     alert("Clicked " + element.id);
 // }
 
-let header = document.getElementById("myHeader");
+// let header = document.getElementById("myHeader");
 
-header.addEventListener("click", function(){
-    alert("You clicked " + header.id)
-});
+// header.addEventListener("click", function(){
+//     alert("You clicked " + header.id)
+// });
+
+// let myGrade = "A";
+// switch(myGrade){
+//     case "A":
+//         document.write("You Pass");
+//     case "F":
+//         document.write("You Fail");
+//     default:
+//         document.write("Invalid grade");
+// }
+
+//---------------------------------------------------
+//        LOOPS
+
+//  let index = 1;
+// while(index <= 5){
+//     document.write(index);
+//     index++
+// }
+
+// do {
+//     document.write(index);
+//     index++;
+// }while(index <=5);
+
+// for(let i = 0; i < 5; i++){
+//     document.write(i);
+// }
+
+// let luckyNums = [4, 8, 15, 16, 23, 42];
+// luckyNums.forEach(function(luckyNum){
+//     document.write(luckyNum + "<br>");
+// });
+
+ //--------------------------------------------
+ //    Extension catching
+
+// let x = y + 9;
+
+// try{
+//     throw "Something went wrong"
+//     // let x = y + 9;
+// }catch(err){
+//     document.write(err)
+// }finally{
+
+// }
+
+//----------------------------------------------
+//    Classes and Objects
+
+
+// class Book {
+//     constructor(title,author){
+//         this.title = title;
+//         this.author = author;
+//     }
+//     readBook(){
+//         document.write("Reading " + this.title + " by " + this.author)
+//     }
+// }
+
+// let book1 = new Book("Harry Potter", "JK Rowling");
+
+// document.write(book1.title + "<br>");
+// book1.readBook();
+
+//--------------------------------------------------
+//               Getters and Setters
+class Book {
+    constructor(title,author){
+        this.title = title;
+        this.author = author;
+    }
+    get title(){
+        document.write("<p>getting</p>");
+        return this._title;
+    }
+    
+    set title(title){
+        document.write("<p>setting</p>");
+        this._title = title;
+    }
+
+    readbook(){
+        document.write("Reading " + this._title + " by " + this.author)
+    }
+}
+
+    let book1 = new Book ("Harry Potter", "JK Rowling");
+
+    document.write(book1.title + "<br>");
+    book1.readbook(); 
