@@ -129,27 +129,30 @@
 
 //--------------------------------------------------
 //               Getters and Setters
-class Book {
-    constructor(title,author){
-        this.title = title;
-        this.author = author;
-    }
-    get title(){
-        document.write("<p>getting</p>");
-        return this._title;
-    }
+// class Book {
+//     constructor(title,author){
+//         this.title = title;
+//         this.author = author;
+//     }
+//     get title(){
+//         document.write("<p>getting</p>");
+//         return this._title;
+//     }
     
-    set title(title){
-        document.write("<p>setting</p>");
-        this._title = title;
-    }
+//     set title(title){
+//         document.write("<p>setting</p>");
+//         this._title = title;
+//     }
 
-    readbook(){
-        document.write("Reading " + this._title + " by " + this.author)
-    }
-}
+//     readbook(){
+//         document.write("Reading " + this._title + " by " + this.author)
+//     }
+// }
 
-    let book1 = new Book ("Harry Potter", "JK Rowling");
+//     let book1 = new Book ("Harry Potter", "JK Rowling");
 
-    document.write(book1.title + "<br>");
-    book1.readbook(); 
+//     document.write(book1.title + "<br>");
+//     book1.readbook(); 
+
+//------------------------------------------------
+//       INHERITANCE    
