@@ -156,3 +156,8 @@
 
 //------------------------------------------------
 //       INHERITANCE    
+
+let num1 = window.prompt("Enter a number");
+let num2 = window.prompt("Enter another number");
+
+documnt.write(num1 + num2);
